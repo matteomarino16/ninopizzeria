@@ -345,14 +345,18 @@ section { padding: 64px 0; }
 
 @media (max-width: 768px) {
   .hero-logo { width: clamp(80px, 28vw, 140px); }
+  .hero-grid { grid-template-columns: 1fr; min-height: 0; gap: 16px; }
+  .hero-grid .hero-logo:last-of-type { display: none; }
+  .hero-tag { padding: 0 12px; }
+  .hero .section-text { line-height: 1.8; }
   .contacts-grid { grid-template-columns: 1fr; gap: 16px; }
   .hero-image { width: 160px; }
   .favorites-row { display: flex; gap: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 8px; justify-content: center; scroll-snap-type: x mandatory; }
   .fav-item { flex: 0 0 auto; scroll-snap-align: center; }
   .fav-image { width: 110px; }
-  .order-grid { display: flex; gap: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory; }
-  .order-card { flex: 0 0 280px; scroll-snap-align: center; }
-  .order-grid { justify-content: center; padding-left: calc((100vw - 280px)/2); padding-right: calc((100vw - 280px)/2); scroll-padding-inline: calc((100vw - 280px)/2); }
+  .order { padding: 48px 0; }
+  .order-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+  .order-card { width: 100%; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
   .map-embed { height: 240px; }
   .info-box { min-height: auto; padding: 16px; }
   .sub-card { padding: 12px; margin-bottom: 10px; }
