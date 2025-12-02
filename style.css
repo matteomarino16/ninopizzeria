@@ -221,11 +221,16 @@ section { padding: 64px 0; }
 .button:hover { opacity: 0.92; }
 
 .gallery-grid {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
   column-count: 3;
+  -webkit-column-gap: 16px;
+  -moz-column-gap: 16px;
   column-gap: 16px;
 }
 .gallery-item {
   width: 100%;
+  max-width: 100%;
   display: block;
   height: auto;
   border-radius: 12px;
@@ -234,6 +239,8 @@ section { padding: 64px 0; }
   box-shadow: 0 4px 12px rgba(0,0,0,0.04);
   margin-bottom: 16px;
   break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .menu-stack {
@@ -361,8 +368,13 @@ section { padding: 64px 0; }
   .info-box { min-height: auto; padding: 16px; }
   .sub-card { padding: 12px; margin-bottom: 10px; }
   .info-icon svg { width: 24px; height: 24px; }
-  .gallery-grid { column-count: 3; column-gap: 8px; }
+  .gallery-grid { -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; -webkit-column-gap: 8px; -moz-column-gap: 8px; column-gap: 8px; }
   .gallery-item { margin-bottom: 8px; }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; -webkit-column-gap: 6px; -moz-column-gap: 6px; column-gap: 6px; }
+  .gallery-item { margin-bottom: 6px; }
 }
 .hero .section-title,
 .contacts .section-title,
