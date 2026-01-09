@@ -248,6 +248,8 @@ section { padding: 64px 0; }
   break-inside: avoid;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
+  content-visibility: auto;
+  contain-intrinsic-size: 300px;
 }
 
 .menu-stack {
