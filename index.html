@@ -4,9 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Joker Pizza</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
    <!-- SEO Base -->
     <title>Joker Pizza</title>
@@ -37,14 +34,14 @@
     <link rel="apple-touch-icon" href="favicon.png">
 
 </head>
-<body>
+<body data-title-it="Joker Pizza" data-title-en="Joker Pizza">
   <header class="site-header">
     <nav class="nav container">
-      <a href="index.html" class="brand"><img src="scrittalogo.png" alt="Joker Pizza" class="brand-logo"></a>
+      <a href="index.html" class="brand"><img src="scrittalogo.png" alt="Joker Pizza" class="brand-logo" width="777" height="416" loading="eager" fetchpriority="high" decoding="async"></a>
       <div class="nav-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="menu.html" class="nav-link">Menù</a>
-        <a href="galleria.html" class="nav-link">Galleria</a>
+        <a href="index.html" class="nav-link" data-i18n-en="Home">Home</a>
+        <a href="menu.html" class="nav-link" data-i18n-en="Menu">Menù</a>
+        <a href="galleria.html" class="nav-link" data-i18n-en="Gallery">Galleria</a>
       </div>
     </nav>
   </header>
@@ -52,63 +49,63 @@
   <main>
     <section class="hero">
       <div class="hero-grid container">
-        <img src="logo.png" alt="Logo Joker Pizza" class="hero-logo">
+        <img src="logo.png" alt="Logo Joker Pizza" class="hero-logo" width="961" height="1069" loading="eager" fetchpriority="high" decoding="async">
         <div class="hero-tag">
            
-          <p class="section-text">Ami la pizza?<br>Noi la viviamo. La impastiamo. La cuociamo nel forno a legna, la serviamo a te.<br>Un luogo dove ogni pizza racconta una storia, ogni ingrediente è scelto con cura, e ogni morso sa di casa.</p>
-          <a class="badge" href="menu.html">Scopri il Menù <span></span></a>
+          <p class="section-text" data-i18n-en="Love pizza?<br>We live it. We knead it. We bake it in a wood-fired oven, and serve it to you.<br>A place where every pizza tells a story, every ingredient is chosen with care, and every bite tastes like home.">Ami la pizza?<br>Noi la viviamo. La impastiamo. La cuociamo nel forno a legna, la serviamo a te.<br>Un luogo dove ogni pizza racconta una storia, ogni ingrediente è scelto con cura, e ogni morso sa di casa.</p>
+          <a class="badge" href="menu.html" data-i18n-en="Discover the Menu <span></span>">Scopri il Menù <span></span></a>
          <div class="hero-image-box">
-          <img src="herosfondo.jpg" alt="Immagine hero" class="hero-image"> 
+          <img src="herosfondo.jpg" alt="Immagine hero" class="hero-image" width="495" height="240" loading="eager" fetchpriority="high" decoding="async"> 
           </div>
         </div>
          
-        <img src="logo.png" alt="Logo Joker Pizza" class="hero-logo">
+        <img src="logo.png" alt="Logo Joker Pizza" class="hero-logo" width="961" height="1069" loading="lazy" fetchpriority="low" decoding="async">
       </div>
     </section>
 
     <section class="favorites">
       <div class="container">
-        <h2 class="section-title">Le pizze più amate</h2>
+        <h2 class="section-title" data-i18n-en="Most loved pizzas">Le pizze più amate</h2>
         <div class="favorites-row">
           <div class="fav-item">
-            <a href="menu.html" class="fav-link"><img src="pizza1.png" alt="Pizza Margherita" class="fav-image"></a>
+            <a href="menu.html" class="fav-link"><img src="pizza1-opt.jpg" alt="Pizza Margherita" class="fav-image" width="700" height="691" loading="lazy" fetchpriority="low" decoding="async"></a>
             <div class="fav-name"><a href="menu.html">Margherita</a></div>
           </div>
           <div class="fav-item">
-            <a href="menu.html" class="fav-link"><img src="pizza2.png" alt="Pizza Bufala" class="fav-image"></a>
+            <a href="menu.html" class="fav-link"><img src="pizza2-opt.jpg" alt="Pizza Bufala" class="fav-image" width="697" height="700" loading="lazy" fetchpriority="low" decoding="async"></a>
             <div class="fav-name"><a href="menu.html">Bufala</a></div>
           </div>
           <div class="fav-item">
-            <a href="menu.html" class="fav-link"><img src="pizza3.png" alt="Pizza Caprese" class="fav-image"></a>
+            <a href="menu.html" class="fav-link"><img src="pizza3-opt.jpg" alt="Pizza Caprese" class="fav-image" width="700" height="691" loading="lazy" fetchpriority="low" decoding="async"></a>
             <div class="fav-name"><a href="menu.html">Caprese</a></div>
           </div>
         </div>
-        <div class="favorites-cta"><a class="badge" href="menu.html">Scopri il Menù <span></span></a></div>
+        <div class="favorites-cta"><a class="badge" href="menu.html" data-i18n-en="Discover the Menu <span></span>">Scopri il Menù <span></span></a></div>
       </div>
     </section>
 
     <section class="order">
       <div class="container">
-        <h2 class="section-title">Ordina</h2>
+        <h2 class="section-title" data-i18n-en="Order">Ordina</h2>
         <div class="order-grid">
           <div class="order-card">
             <div class="order-icon">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h10a1 1 0 011 1v5h3.28a3 3 0 012.83 2.01l.73 2.19A1 1 0 0119.91 18H18a3 3 0 11-6 0H9a3 3 0 11-6 0H2a1 1 0 010-2h1.06a5 5 0 014.88-4h5.06V8H4a1 1 0 01-1-1V7a1 1 0 010-1zm3 11a1 1 0 100-2 1 1 0 000 2zm9 0a1 1 0 100-2 1 1 0 000 2z"></path></svg>
             </div>
-            <h3 class="order-title">Delivery a casa tua</h3>
-            <p class="order-text">Ordina e te la portiamo a casa.</p>
+            <h3 class="order-title" data-i18n-en="Delivery to your home">Delivery a casa tua</h3>
+            <p class="order-text" data-i18n-en="Order and we'll bring it to you.">Ordina e te la portiamo a casa.</p>
             <div class="order-actions">
-              <a class="order-button" href="tel:+3909231714111">Chiama ora</a>
+              <a class="order-button" href="tel:+3909231714111" data-i18n-en="Call now">Chiama ora</a>
             </div>
           </div>
           <div class="order-card">
             <div class="order-icon">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10a2 2 0 012 2v11a2 2 0 01-2 2H7a2 2 0 01-2-2V6a2 2 0 012-2zm0 3v1h10V7H7zm0 3v7h10v-7H7z"></path></svg>
             </div>
-            <h3 class="order-title">Asporto</h3>
-            <p class="order-text">Ritira in pizzeria quando preferisci.</p>
+            <h3 class="order-title" data-i18n-en="Takeaway">Asporto</h3>
+            <p class="order-text" data-i18n-en="Pick up at the pizzeria whenever you like.">Ritira in pizzeria quando preferisci.</p>
             <div class="order-actions">
-              <a class="order-button" href="https://www.google.com/maps/search/?api=1&query=Corso+Calatafimi+52,+Marsala" target="_blank" rel="noopener">Apri mappe</a>
+              <a class="order-button" href="https://www.google.com/maps/search/?api=1&query=Corso+Calatafimi+52,+Marsala" target="_blank" rel="noopener" data-i18n-en="Open maps">Apri mappe</a>
             </div>
           </div>
         </div>
@@ -119,7 +116,7 @@
 
     <section class="contacts">
       <div class="container">
-        <h2 class="section-title">Contatti</h2>
+        <h2 class="section-title" data-i18n-en="Contacts">Contatti</h2>
         <div class="contacts-grid">
           <div class="info-box clickable" tabindex="0" role="button">
             <iframe class="map-embed" loading="lazy" allowfullscreen
@@ -156,7 +153,7 @@
                 <div class="info-icon">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a1 1 0 0 1 1 1v3.59l2.3 2.3a1 1 0 1 1-1.41 1.41l-2.59-2.59A1 1 0 0 1 11 12V8a1 1 0 0 1 1-1zm0-5a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2z"></path></svg>
                 </div>
-                <div class="info-content"><span class="info-value">Lunedi - Domenica 18:00 – 23:00</span></div>
+                <div class="info-content"><span class="info-value" data-i18n-en="Monday - Sunday 18:00 – 23:00">Lunedi - Domenica 18:00 – 23:00</span></div>
               </div>
             </div>
           <div class="info-actions">
@@ -172,16 +169,16 @@
 
     <section class="newsletter">
       <div class="container">
-        <h2 class="section-title">Newsletter</h2>
-        <p class="section-text">Iscriviti per ricevere novità e promozioni.</p>
+        <h2 class="section-title" data-i18n-en="Newsletter">Newsletter</h2>
+        <p class="section-text" data-i18n-en="Subscribe to receive news and promotions.">Iscriviti per ricevere novità e promozioni.</p>
         <div class="news-card clickable" tabindex="0" role="button">
           <form class="news-form" action="https://app.formsubmit.site/f/939c1c16-ff16-49b3-813a-6acbb4578b7c" method="post">
-            <input class="input" type="email" name="email" placeholder="La tua email" required>
-            <button class="button" type="submit">Iscriviti</button>
+            <input class="input" type="email" name="email" placeholder="La tua email" required data-i18n-en-placeholder="Your email">
+            <button class="button" type="submit" data-i18n-en="Subscribe">Iscriviti</button>
           </form>
           <div class="consent-row">
             <input type="checkbox" id="cookie-consent" class="consent-checkbox" required>
-            <label for="cookie-consent">Accetto l’uso dei cookie per la newsletter (<a href="cookies.html">leggi</a>)</label>
+            <label for="cookie-consent" data-i18n-en="I accept the use of cookies for the newsletter (<a href=&quot;cookies.html&quot;>read</a>)">Accetto l’uso dei cookie per la newsletter (<a href="cookies.html">leggi</a>)</label>
           </div>
         </div>
       </div>
@@ -191,11 +188,11 @@
   <footer class="site-footer">
     <div class="container">
       <p>Joker Pizza - Corso Calatafimi 52, Marsala, Sicilia</p>
-      <p>© 2026 Jokerpizza.it . Tutti i diritti riservati.</p>
+      <p data-i18n-en="© 2026 Jokerpizza.it . All rights reserved.">© 2026 Jokerpizza.it . Tutti i diritti riservati.</p>
       <p>Web by <a href="https://www.instagram.com/_matteomarino/" target="_blank" rel="noopener">Matteo Marino</a></p>
     </div>
   </footer>
-  <a href="tel:+3909231714111" class="call-fab" aria-label="Chiama e ordina">
+  <a href="tel:+3909231714111" class="call-fab" aria-label="Chiama e ordina" data-i18n-en-aria-label="Call and order">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1v3.25a1 1 0 0 1-1 1C12.06 21.56 2.44 11.94 2.24 3.99a1 1 0 0 1 1-1H6.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.24 1.01l-2.21 2.21z"></path></svg>
   </a>
   <script src="script.js"></script>
